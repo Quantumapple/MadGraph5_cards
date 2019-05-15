@@ -1,5 +1,0 @@
-import ZpHiggs_UFO_500_50_150_700
-# Define multiparticle labels
-generate       p p > zp > j dm dm @0
-add process p p > zp > j j dm dm  @1
-output DHMonoJ_LO
