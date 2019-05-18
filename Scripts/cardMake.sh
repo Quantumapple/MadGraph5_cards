@@ -9,10 +9,11 @@ do
         #targetDir=DarkHiggs_MonoHs_LO_MZprime-$Med\_Mhs-90_Mchi-$Mchi\_gSM-0p25_gDM-1p0_th-0p01_13TeV-madgraph
         #targetDir=DarkHiggs_MonoJet_LO_MZprime-${Med}_Mchi-${Mchi}_gSM-0p25_gDM-1p0_th-0p01_13TeV-madgraph
         #targetDir=DarkHiggs_MonoW_LO_MZprime-${Med}_Mchi-${Mchi}_gSM-0p25_gDM-1p0_th-0p01_13TeV-madgraph
-        #targetDir=DarkHiggs_MonoZ_LO_MZprime-${Med}_Mchi-${Mchi}_gSM-0p25_gDM-1p0_th-0p01_13TeV-madgraph
-        modelName=ZpHiggs_UFO_${Med}_70_${Mchi}_700.tgz
+        targetDir=DarkHiggs_MonoZ_LO_MZprime-${Med}_Mchi-${Mchi}_gSM-0p25_gDM-1p0_th-0p01_13TeV-madgraph
+        modelName=ZpHiggs_UFO_${Med}_70_${Mchi}_700
         if [ -e $targetDir ]; then
             cp run_card.dat ${targetDir}/${targetDir}_run_card.dat
+            cp /home/jongho/Physics/LPC-DM/Signal_cards/DarkHiggs_models/${modelName}.tgz ${targetDir}/
             
             cd $targetDir
             
@@ -38,4 +39,3 @@ do
         fi
     done
 done
-
