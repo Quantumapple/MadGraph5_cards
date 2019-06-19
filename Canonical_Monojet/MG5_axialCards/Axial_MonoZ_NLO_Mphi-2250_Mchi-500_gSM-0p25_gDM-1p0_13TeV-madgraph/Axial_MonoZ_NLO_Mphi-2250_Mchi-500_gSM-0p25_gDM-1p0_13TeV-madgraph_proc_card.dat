@@ -1,0 +1,8 @@
+import DMsimp_s_spin1_2250_500_801
+# Define multiparticle labels
+generate       p p  > xd xd~ z   [QCD]
+add process    p p  > xd xd~ z j [QCD]
+output Axial_MonoZ_NLO_Mphi-2250_Mchi-500_gSM-0p25_gDM-1p0_13TeV-madgraph
+
+
+
