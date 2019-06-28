@@ -1,0 +1,4 @@
+import DMsimp_s_spin1_monotop_295_150_800
+generate       p p  > xd xd~ t    [QCD]
+add process    p p  > xd xd~ t~   [QCD]
+output Vector_MonoTop_NLO_Mphi-295_Mchi-150_gSM-0p25_gDM-1p0_13TeV-madgraph
